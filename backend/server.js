@@ -23,9 +23,9 @@ app.listen(PORT, () =>
   console.log(`app listening on port ${PORT}!`.bgCyan.blue)
 );
 //routes
-app.use("/api/v1/auth/", authRoute);
-app.use("/api/v1/category", categoryRoutes);
-app.use("/api/v1/product", productRoutes);
+app.use("https://ecommerce-backend-s84l.onrender.com/api/v1/auth/", authRoute);
+app.use("https://ecommerce-backend-s84l.onrender.com/api/v1/category", categoryRoutes);
+app.use("https://ecommerce-backend-s84l.onrender.com/api/v1/product", productRoutes);
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to MERN stack project</h1>");
 });
